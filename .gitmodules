@@ -1,9 +1,0 @@
-[submodule "Practice1"]
-	path = Practice1
-	url = https://github.com/nurbekturuspekov338-netizen/Practice1.git
-[submodule "Practice2"]
-	path = Practice2
-	url = https://github.com/nurbekturuspekov338-netizen/Practice2.git
-[submodule "Python-basics"]
-	path = Python-basics
-	url = https://github.com/nurbekturuspekov338-netizen/Python-basics.git
