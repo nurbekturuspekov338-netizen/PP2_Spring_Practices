@@ -1,0 +1,7 @@
+Users and Handles
+
+user_id: 191, handle: @adik_
+user_id: 667, handle: @john_doe
+user_id: 823, handle: @invalid123
+user_id: 945, handle: @correct_handle
+user_id: 556, handle: @noDigit
