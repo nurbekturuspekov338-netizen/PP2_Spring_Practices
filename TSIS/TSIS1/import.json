@@ -1,0 +1,40 @@
+[
+    {
+        "name": "John",
+        "surname": "Doe",
+        "email": "john.doe@example.com",
+        "birthday": "1990-05-15",
+        "group": "Friends",
+        "phones": [
+            {
+                "phone": "+1234567890",
+                "type": "mobile"
+            },
+            {
+                "phone": "+1987654321",
+                "type": "work"
+            }
+        ]
+    },
+    {
+        "name": "Jane",
+        "surname": "Smith",
+        "email": "jane.smith@provider.net",
+        "birthday": null,
+        "group": "Colleagues",
+        "phones": [
+            {
+                "phone": "+1122334455",
+                "type": "mobile"
+            }
+        ]
+    },
+    {
+        "name": "Robert",
+        "surname": "Brown",
+        "email": "rbrown@company.com",
+        "birthday": "1985-11-30",
+        "group": null,
+        "phones": []
+    }
+]

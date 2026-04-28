@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Adil",
+        "surname": "Burak",
+        "email": "m_tyrus@gmail.com",
+        "birthday": "1999-02-12",
+        "group": "home",
+        "phones": [
+            {
+                "phone": "87756551458",
+                "type": "mobile"
+            },
+            {
+                "phone": "Burak",
+                "type": "mobile"
+            }
+        ]
+    },
+    {
+        "name": "Ali",
+        "surname": "Khan",
+        "email": "ali@gmail.com",
+        "birthday": "2005-04-12",
+        "group": "Friend",
+        "phones": [
+            {
+                "phone": "87071112233",
+                "type": "mobile"
+            }
+        ]
+    },
+    {
+        "name": "Dana",
+        "surname": "Serik",
+        "email": "dana@mail.com",
+        "birthday": "2004-09-21",
+        "group": "Family",
+        "phones": [
+            {
+                "phone": "87075556677",
+                "type": "home"
+            }
+        ]
+    },
+    {
+        "name": "Aruzhan",
+        "surname": "Bek",
+        "email": "aruzhan@work.com",
+        "birthday": "2003-01-10",
+        "group": "Work",
+        "phones": [
+            {
+                "phone": "87078889900",
+                "type": "work"
+            }
+        ]
+    }
+]

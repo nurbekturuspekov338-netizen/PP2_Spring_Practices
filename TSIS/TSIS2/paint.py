@@ -321,11 +321,20 @@ def main():
                 last_pos  = click_rel
 
                 if curr_tool in ('brush', 'eraser', 'pencil'):
-                    color  = BLACK if curr_tool == 'eraser' else curr_color
-                    radius = brush_size() if curr_tool != 'eraser' else 20
-                    shapes.append({'type': 'pencil_line', 'color': color,
-                                   'pos': start_pos, 'end': click_rel,
-                                   'radius': radius})
+                    if curr_tool == 'eraser':
+                        color = WHITE
+                        radius = brush_size() * 2.5   # ластик чуть толще
+                    else:
+                        color = curr_color
+                        radius = brush_size() if curr_tool == 'pencil' else brush_size() * 1.8
+                    
+                    shapes.append({
+                        'type': 'pencil_line',
+                        'color': color,
+                        'pos': start_pos,
+                        'end': click_rel,
+                        'radius': int(radius)
+                    })
 
             # ── Mouse motion ────────────────────────────────────────────────
             elif event.type == pygame.MOUSEMOTION:
@@ -334,11 +343,23 @@ def main():
                 cur_rel = canvas_pos(event.pos)
 
                 if curr_tool in ('brush', 'eraser', 'pencil'):
-                    color  = BLACK if curr_tool == 'eraser' else curr_color
-                    radius = brush_size() if curr_tool != 'eraser' else 20
-                    shapes.append({'type': 'pencil_line', 'color': color,
-                                   'pos': last_pos, 'end': cur_rel,
-                                   'radius': radius})
+                    if curr_tool == 'eraser':
+                        color = WHITE
+                        radius = brush_size() * 2.5
+                    elif curr_tool == 'pencil':
+                        color = curr_color
+                        radius = brush_size()          # карандаш — тонкий
+                    else:  # brush
+                        color = curr_color
+                        radius = brush_size() * 1.8    # кисть чуть толще карандаша
+
+                    shapes.append({
+                        'type': 'pencil_line',
+                        'color': color,
+                        'pos': last_pos,
+                        'end': cur_rel,
+                        'radius': int(radius)
+                    })
                     last_pos = cur_rel
 
             # ── Mouse up ────────────────────────────────────────────────────
